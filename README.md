@@ -64,7 +64,7 @@ Add this server to your Claude Desktop configuration file:
       "command": "java",
       "args": [
         "-jar",
-        "/path/to/your/kcdc-mcp/target/kcdc-mcp-0.0.1-SNAPSHOT.jar"
+        "/Users/vega/Downloads/kcdc-mcp/target/kcdc-mcp-0.0.1-SNAPSHOT.jar"
       ]
     }
   }
@@ -155,32 +155,49 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
 
 ## Agenda
 
+- Slides:
+  - 
+- Demo Start Here:
+  - Browser Tabs:
+    - https://claude.ai/new
+    - https://start.spring.io/
+    - https://docs.spring.io/spring-ai/reference/index.html
+    - https://modelcontextprotocol.io/docs/getting-started/intro
 - Ask claude (web or desktop) how many sessions are at KCDC this year
-    - The model wasn't trained on this data
-    - It will now invoke tools to try gather the data it needs to answer that question
+  - The model wasn't trained on this data
+  - It will now invoke tools to try gather the data it needs to answer that question
 - Create the MCP Server
-    - [start.spring.io](http://start.spring.io)
-    - Web, MCP Server
-    - application.properties
-    - Show sessions data
+  - [start.spring.io](http://start.spring.io)
+  - Web, MCP Server
+  - application.properties
+  - Show sessions data
 - Models
-    - Conference
-    - Sessions
+  - Conference
+  - Sessions
 - Tools
-    - SessionTools
-    - Discuss Additional tools but don't implement
-    - Add tool callbacks
-    - Build `mvn clean package -DskipTests`
-    - Test `npx @modelcontextprotocol/inspector`
+  - SessionTools
+  - Discuss Additional tools but don't implement
+  - Add tool callbacks
+  - Build `mvn clean package -DskipTests`
+  - Test `npx @modelcontextprotocol/inspector`
+  - Finished at 14:30
 - Prompts
-    - Conference Prompts
-    - Build & Test
+  - Conference Prompts
+  - Build & Test
+  - Finished at 20:00
 - Resources
-    - SpeakerResource
-    - Build & Test
+  - SpeakerResource
+  - Build & Test
+  - Finished at 25:00
 - Claude Desktop
-    - What prompts will we ask
-    - Prompts
-    - Resources
+  - [Configuration](#configuration)
+  - Demo Prompts
+    - How many sessions will there be at KCDC this year?
+    - I'm a Java developer interested in AI and MCP. Can you recommend any sessions at KCDC this year for me?
+    - That session with Dan Vega sounds interesting, can you give me some background information on him?
+  - Prompts
+  - Resources
+  - Finished 32
 - HTTP + SSE
-    - Turning this into a public MCP server
+  - Turning this into a public MCP server
+  - Finished at 34:00
