@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: kcdc-mcp
+  main:
+    web-application-type: servlet
+    banner-mode: log
+  ai:
+    mcp:
+      server:
+        stdio: false
+        http:
+          enabled: true
+          sse: true
+        type: sync
+        name: kcdc-sessions-mcp
+        version: 0.0.1
+
+server:
+  port: 8080
+
+logging:
+  level:
+    dev.danvega: INFO
+    org.springframework.ai: INFO
