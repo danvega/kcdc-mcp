@@ -16,19 +16,4 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
-	public List<ToolCallback> kcdcSessionTools(SessionTools sessionTools) {
-		return List.of(ToolCallbacks.from(sessionTools));
-	}
-
-	@Bean
-	public List<McpServerFeatures.SyncPromptSpecification> kcdcPrompts(ConferencePrompts prompts) {
-		return prompts.listPrompts();
-	}
-
-	@Bean
-	public List<McpServerFeatures.SyncResourceSpecification> kcdcResources(SpeakersResource speakersResource) {
-		return speakersResource.listResources();
-	}
-
 }

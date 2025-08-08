@@ -152,3 +152,35 @@ curl -X POST http://localhost:8080/mcp/tools/kcdc-sessions-by-date \
 ```
 
 This allows the MCP server to be deployed publicly and accessed by any MCP-compatible client over HTTP.
+
+## Agenda
+
+- Ask claude (web or desktop) how many sessions are at KCDC this year
+    - The model wasn't trained on this data
+    - It will now invoke tools to try gather the data it needs to answer that question
+- Create the MCP Server
+    - [start.spring.io](http://start.spring.io)
+    - Web, MCP Server
+    - application.properties
+    - Show sessions data
+- Models
+    - Conference
+    - Sessions
+- Tools
+    - SessionTools
+    - Discuss Additional tools but don't implement
+    - Add tool callbacks
+    - Build `mvn clean package -DskipTests`
+    - Test `npx @modelcontextprotocol/inspector`
+- Prompts
+    - Conference Prompts
+    - Build & Test
+- Resources
+    - SpeakerResource
+    - Build & Test
+- Claude Desktop
+    - What prompts will we ask
+    - Prompts
+    - Resources
+- HTTP + SSE
+    - Turning this into a public MCP server
