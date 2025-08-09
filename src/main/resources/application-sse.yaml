@@ -8,12 +8,11 @@ spring:
     mcp:
       server:
         stdio: false
-        http:
-          enabled: true
-          sse: true
         type: sync
         name: kcdc-sessions-mcp
         version: 0.0.1
+        enabled: true
+        instructions: "This server provides session catalog data for KCDC 2025"
 
 server:
   port: 8080
