@@ -155,9 +155,8 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
 
 ## Agenda
 
-- Slides:
-  - 
-- Demo Start Here:
+- Slides
+- Demo Start Here
   - Browser Tabs:
     - https://claude.ai/new
     - https://start.spring.io/
@@ -169,7 +168,7 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
 - Create the MCP Server
   - [start.spring.io](http://start.spring.io)
   - Web, MCP Server
-  - application.properties
+  - application.properties (STDIO vs SSE - The code is the same, the configuration is different)
   - Show sessions data
 - Models
   - Conference
@@ -180,15 +179,12 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
   - Add tool callbacks
   - Build `mvn clean package -DskipTests`
   - Test `npx @modelcontextprotocol/inspector`
-  - Finished at 14:30
 - Prompts
   - Conference Prompts
   - Build & Test
-  - Finished at 20:00
 - Resources
   - SpeakerResource
   - Build & Test
-  - Finished at 25:00
 - Claude Desktop
   - [Configuration](#configuration)
   - Demo Prompts
@@ -197,7 +193,5 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
     - That session with Dan Vega sounds interesting, can you give me some background information on him?
   - Prompts
   - Resources
-  - Finished 32
 - HTTP + SSE
   - Turning this into a public MCP server
-  - Finished at 34:00
