@@ -22,7 +22,7 @@ This MCP server provides three main capabilities:
 ### Prompts
 - Conference-specific prompt templates for session recommendations
 
-### Resources  
+### Resources
 - Speaker information and backgrounds
 
 ## Quick Start
@@ -53,7 +53,7 @@ npx @modelcontextprotocol/inspector
 
 Add this server to your Claude Desktop configuration file:
 
-**Location**: 
+**Location**:
 - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 
@@ -120,7 +120,7 @@ The project includes two configuration profiles:
 - Perfect for Claude Desktop integration
 - No network exposure
 
-**Public (HTTP + SSE)**: `application-sse.yaml`  
+**Public (HTTP + SSE)**: `application-sse.yaml`
 - Runs as a web server on port 8080
 - Uses Server-Sent Events for real-time communication
 - Accessible over HTTP for remote clients
@@ -155,49 +155,43 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
 
 ## Agenda
 
-- Slides:
-  - 
-- Demo Start Here:
-  - Browser Tabs: 
+- Slides
+- Demo Start Here
+  - Browser Tabs:
     - https://claude.ai/new
     - https://start.spring.io/
     - https://docs.spring.io/spring-ai/reference/index.html
     - https://modelcontextprotocol.io/docs/getting-started/intro
 - Ask claude (web or desktop) how many sessions are at KCDC this year
-    - The model wasn't trained on this data
-    - It will now invoke tools to try gather the data it needs to answer that question
+  - The model wasn't trained on this data
+  - It will now invoke tools to try gather the data it needs to answer that question
 - Create the MCP Server
-    - [start.spring.io](http://start.spring.io)
-    - Web, MCP Server
-    - application.properties
-    - Show sessions data
+  - [start.spring.io](http://start.spring.io)
+  - Web, MCP Server
+  - application.properties (STDIO vs SSE - The code is the same, the configuration is different)
+  - Show sessions data
 - Models
-    - Conference
-    - Sessions
+  - Conference
+  - Sessions
 - Tools
-    - SessionTools
-    - Discuss Additional tools but don't implement
-    - Add tool callbacks
-    - Build `mvn clean package -DskipTests`
-    - Test `npx @modelcontextprotocol/inspector`
-    - Finished at 14:30
+  - SessionTools
+  - Discuss Additional tools but don't implement
+  - Add tool callbacks
+  - Build `mvn clean package -DskipTests`
+  - Test `npx @modelcontextprotocol/inspector`
 - Prompts
-    - Conference Prompts
-    - Build & Test
-    - Finished at 20:00
+  - Conference Prompts
+  - Build & Test
 - Resources
-    - SpeakerResource
-    - Build & Test
-    - Finished at 25:00
+  - SpeakerResource
+  - Build & Test
 - Claude Desktop
-    - [Configuration](#configuration)
-    - Demo Prompts
-      - How many sessions will there be at KCDC this year?
-      - I'm a Java developer interested in AI and MCP. Can you recommend any sessions at KCDC this year for me?
-      - That session with Dan Vega sounds interesting, can you give me some background information on him? 
-    - Prompts
-    - Resources
-    - Finished 32
+  - [Configuration](#configuration)
+  - Demo Prompts
+    - How many sessions will there be at KCDC this year?
+    - I'm a Java developer interested in AI and MCP. Can you recommend any sessions at KCDC this year for me?
+    - That session with Dan Vega sounds interesting, can you give me some background information on him?
+  - Prompts
+  - Resources
 - HTTP + SSE
-    - Turning this into a public MCP server
-    - Finished at 34:00
+  - Turning this into a public MCP server
