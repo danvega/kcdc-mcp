@@ -180,15 +180,16 @@ This allows the MCP server to be deployed publicly and accessed by any MCP-compa
   - Build `mvn clean package -DskipTests`
   - Test `npx @modelcontextprotocol/inspector`
 - Prompts
-  - Conference Prompts
+  - `ConferencePrompts`
   - Build & Test
 - Resources
-  - SpeakerResource
+  - `SpeakersResource`
   - Build & Test
 - Claude Desktop
   - [Configuration](#configuration)
   - Demo Prompts
     - How many sessions will there be at KCDC this year?
+    - Use Prompt Template
     - I'm a Java developer interested in AI and MCP. Can you recommend any sessions at KCDC this year for me?
     - That session with Dan Vega sounds interesting, can you give me some background information on him?
   - Prompts
